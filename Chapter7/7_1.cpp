@@ -2,8 +2,8 @@
 #include <cstdlib> // exit()函数所在库
 using namespace std;
 
-//示例6.4
-//包含私有成员的类
+//示例7.1
+//类的构造函数
 class DayOfYear
 {
 public:
