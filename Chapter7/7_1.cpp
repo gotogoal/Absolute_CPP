@@ -27,7 +27,7 @@ private:
 int main(void) {
     cout<<"this is c++ test" << endl;
     
-    DayOfYear date1(2, 21), date2(5), date3;
+    DayOfYear date1(2, 30), date2(5), date3;
     cout << "Initialized dates:\n";
     date1.output();
     cout << endl;
@@ -68,6 +68,11 @@ void DayOfYear::testDate()
     if((day < 1) || (day > 31))
     {
         cout << "Illegal day value!\n";
+        exit(1);
+    }
+    if((month == 2) && (day > 29))
+    {
+        cout << "Illegal day value for February!\n";
         exit(1);
     }
 }
